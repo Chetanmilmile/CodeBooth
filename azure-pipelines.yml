@@ -1,9 +1,5 @@
 # Node.js with React
-- task: DownloadBuildArtifacts@1
-  inputs:
-    buildType: 'current'
-    downloadType: 'specific'
-    downloadPath: '$(System.ArtifactsDirectory)'
+
 
 # Build a Node.js project that uses React.
 # Add steps that analyze code, save build artifacts, deploy, and more:
@@ -26,6 +22,12 @@ steps:
     npm run build
     npm audit fix
   displayName: 'npm install and build'
+
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'current'
+    downloadType: 'specific'
+    downloadPath: '$(System.ArtifactsDirectory)'
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
