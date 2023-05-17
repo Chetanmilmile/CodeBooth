@@ -47,5 +47,5 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Free Trial (9eac4258-492d-431f-89bd-ac19b8758e2b)'
     appType: 'webApp'
-    WebAppName: 'demoone2'
+    WebAppName: 'hitachiuser'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
