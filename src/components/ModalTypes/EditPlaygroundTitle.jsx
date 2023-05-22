@@ -14,7 +14,7 @@ const EditPlaygroundTitle = () => {
   return (
     <>
       <Header>
-        <h2>Edit Card Title</h2>
+        <h2>Edit name Title</h2>
         <CloseButton onClick={() => closeModal()}>
           <IoCloseSharp />
         </CloseButton>
