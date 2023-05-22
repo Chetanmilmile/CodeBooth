@@ -47,7 +47,7 @@ const NewPlayground = () => {
   return (
     <>
       <Header>
-        <h2>Create New Playground</h2>
+        <h2>Create New one Playground</h2>
         <CloseButton onClick={() => closeModal()}>
           <IoCloseSharp />
         </CloseButton>
